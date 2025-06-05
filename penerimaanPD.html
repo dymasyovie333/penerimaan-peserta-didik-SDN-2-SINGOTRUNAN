@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Penerimaan Peserta Didik Baru - SDN 2 Singotrunan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9fafc;
+      padding: 40px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .search-box {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    input[type="text"] {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    .result {
+      background-color: white;
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .not-found {
+      text-align: center;
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Penerimaan Peserta Didik Baru<br>SDN 2 Singotrunan 2025</h1>
+
+  <div class="search-box">
+    <input type="text" id="namaInput" placeholder="Masukkan Nama Lengkap">
+    <button onclick="cari()">Cari</button>
+  </div>
+
+  <div id="hasil" class="result" style="display: none;"></div>
+  <div id="notFound" class="not-found" style="display: non
